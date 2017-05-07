@@ -1,0 +1,19 @@
+{
+   "content_scripts": [ {
+      "css": [ "style.css" ],
+      "js": [ "script.js" ],
+      "matches": [ "https://trello.com/*" ],
+      "run_at": "document_start"
+   } ],
+   "description": "BreakingBug Trello",
+   "manifest_version": 2,
+   "name": "BreakingBug Trello",
+   "short_name": "BB Trello",
+   "version": "2.0",
+   "icons": {
+      "128": "icon.png"
+   },
+   "browser_action": {
+      "default_icon": "icon.png"
+   }
+}

@@ -1,0 +1,296 @@
+/*COLUMNS FILTERS*/
+#BBTrelloCF {
+    float: left;
+    background:rgba(0,0,0,.12);
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    padding: 3px;
+}
+#BBTrelloCF li {
+    display: inline-block;
+    float: left;
+    padding: 3px 5px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    margin: 0;
+    cursor: pointer;
+    font-size: 12px;
+    white-space: nowrap;
+}
+#BBTrelloCF li:hover{background:rgba(0,0,0,.3)}
+#BBTrelloCF .show-list {color: #f6f6f6;}
+#BBTrelloCF .hide-list {color: silver;}
+#BBTrelloCF .show-all, #BBTrelloCF .hide-all {color: black;}
+/*COLUMNS FILTERS*/
+
+
+/*PROGRESS*/
+.BBTrelloPR {
+    position: relative;
+}
+.BBTrelloPR span {
+    text-align: right;
+    font-size: 11px;
+    color: #8c8c8c;
+    display:inline-block;
+    width: 60px;
+}
+.BBTrelloPR-progress {
+    position: relative;
+    left: 4px;
+    display: inline-block;
+    height: 6px;
+    width: calc(100% - 70px);
+    background-color: #D6DADC;
+    border-radius: 3px;
+    overflow: hidden;
+}
+.BBTrelloPR-progress-active {
+    height: 6px;
+    background-color: #5BA4CF;
+}
+.BBTrelloPR-progress-active100 {
+    height: 6px;
+    width: 100%;
+    background-color: #1EB42A;
+}
+/*PROGRESS*/
+
+
+/*WIP LIMIT*/
+.list {
+    overflow: hidden;
+}
+.BBTrelloWP-over {
+    background: -webkit-linear-gradient(top, rgba(255,0,0,1) 0%, rgba(243,28,20,0) 50%, rgba(231,56,39,0) 100%) !important;
+}
+.BBTrelloWP-limit {
+    background: -webkit-linear-gradient(top, rgba(255,183,0,1) 0%, rgba(255,183,0,0) 50%, rgba(255,183,0,0) 100%) !important;
+}
+/*WIP LIMIT*/
+
+
+/*DARK BOX*/
+.BBTrelloBlack .list {
+    background-color: #333;
+}
+.BBTrelloBlack .list-header-name {
+    color: #fff;
+}
+.BBTrelloBlack .open-card-composer:hover {
+    background-color: #222;
+}
+.BBTrelloBlack .list-card {
+    background-color: #444;
+    border-color: #222;
+}
+.BBTrelloBlack .list-card.active-card {
+    background-color: #555;
+    border-color: #222;
+}
+.BBTrelloBlack .card-short-id {
+    color: #ddd;
+}
+.BBTrelloBlack .list-card-title, .BBTrelloBlack .BBTrelloFakeTitle {
+    color: #ddd;
+}
+.BBTrelloBlack .u-fancy-scrollbar::-webkit-scrollbar-track-piece {
+    background-color: transparent;
+}
+.BBTrelloBlack .u-fancy-scrollbar::-webkit-scrollbar-thumb:vertical {
+    background-color: #222;
+}
+/*DARK BOX*/
+
+
+
+/*ALPHA*/
+.BBTrelloAlpha .list {
+    background-color: rgba(226,228,230,0.7)
+}
+.BBTrelloAlpha.BBTrelloBlack .list {
+    background-color: rgba(20,20,20,0.7);
+}
+/*ALPHA*/
+
+
+
+
+
+
+
+
+
+
+.BBTrelloFakeTitle {
+    clear: both;
+    display: block;
+    font-weight: 400;
+    margin: 0 0 4px;
+    overflow: hidden;
+    text-decoration: none;
+    word-wrap: break-word;
+    color: #4d4d4d;
+}
+
+.BBTrelloCode {
+    color: #444 !important;
+    margin: 0 2px !important;
+    padding: 0px 5px !important;
+    border: 1px solid #ddd !important;
+    background-color: #f8f8f8 !important;
+    border-radius: 3px !important;
+    white-space: nowrap !important;
+}
+
+
+
+
+
+
+
+
+/*
+.list-card {
+    overflow: hidden;
+}
+.js-list:not(:nth-child(1)) > .list > .list-cards > .list-card > .list-card-details {
+    padding-left: 14px !important;
+}
+.js-list:not(:nth-child(1)) > .list > .list-cards > .list-card > .list-card-details > .list-card-labels {
+    position: absolute !important;
+    display: block;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    margin: 0 !important;
+    display: flex;
+    flex-direction: row;
+}
+.js-list:not(:nth-child(1)) > .list > .list-cards > .list-card > .list-card-details > .list-card-labels > .card-label {
+    border-radius: 0 !important;
+    width: 4px !important;
+    overflow: hidden;
+    margin: 0 !important;
+    font-size: 0;
+    padding: 0 !important;
+    float:right;
+}
+.card-label.mod-card-front {
+    min-width: 1px !important;
+}
+*/
+/*
+.card-short-custom-id {
+    display: block;
+    position: absolute;
+    right: 4px;
+    font-weight: bold;
+    color: #20712D;
+    padding-left: 2px;
+    padding-right: 2px;
+    border-radius: 4px;
+    border: solid 2px #20712D;
+    font-size: 12px;
+
+}
+
+.list-card-title{
+    padding-right: 10%;
+}
+
+
+
+.list-header {
+    padding-right: 10px !important;
+}
+.scrummPoints {
+    background-color: #006581;
+    color: white;
+    display:inline-block;
+    border-radius: 3px;
+    line-height: 18px;
+    font-size: 9pt;
+    margin: 0 4px 4px 0;
+    padding: 1px 4px;
+}
+.headerPoints {
+    font-weight: bold;
+    color: #006581;
+    float:right;
+}
+.newCard {
+    background-color: #DDF1FE !important;
+}
+.scrummButtons div {
+    margin-top: 4px;
+}
+.scrummButton, .scrummButtonDel {
+    background-color: #3789BA;
+    border-radius: 3px;
+    display: inline-block;
+    margin-right: 3px;
+    height: 24px;
+    width: 30px;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 24px;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    text-shadow: 0 0 5px rgba(0,0,0,.2), 0 0 2px #000;
+    cursor: pointer;
+}
+.scrummButton:hover {
+    background-color: #4D96C2;
+    color: white;
+}
+.scrummButtonDel {
+    background-color: #F14752;
+}
+.scrummButtonDel:hover {
+    background-color: #FF6874;
+    color: white;
+}
+.scrummButtonNew {
+    width: auto !important;
+    padding-left: 6px;
+    padding-right: 6px;
+    background-color: #F1B64C;
+    border-radius: 3px;
+    display: inline-block;
+    margin-right: 3px;
+    height: 24px;
+    vertical-align: middle;
+    line-height: 24px;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    text-shadow: 0 0 5px rgba(0,0,0,.2), 0 0 2px #000;
+    cursor: pointer;
+}
+.scrummButtonNew:hover {
+    background-color: #FFC050;
+    color: white;
+}
+.scrummButtonsTitle {
+    width: 80px;
+    display: inline-block;
+    color: #333;
+    font-weight: bold;
+    margin-right: 6px;
+}*/
+/*.list-card {
+    border-left: 3px solid #95a5a6;
+}
+.list-card.priority-medium {
+    border-left: 3px solid #f1c40f;
+}
+.list-card.priority-high {
+    border-left: 3px solid #e67e22;
+}
+.list-card.priority-critical {
+    border-left: 3px solid #c0392b;
+}*/
